@@ -34,7 +34,9 @@
 #endif
 
 #ifdef _LIBC
-# include <libintl.h>
+# if ENABLE_NLS
+#  include <libintl.h>
+# endif
 # include <stdbool.h>
 # include <stdint.h>
 # include <wchar.h>

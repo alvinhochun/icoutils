@@ -55,7 +55,9 @@
 #if defined(__cplusplus) && defined(__GNUG__) && (__GNUC__ >= 3)
 # include <cstdlib>
 # if (__GLIBC__ >= 2 && !defined __UCLIBC__) || _GLIBCXX_HAVE_LIBINTL_H
-#  include <libintl.h>
+#  if ENABLE_NLS
+#   include <libintl.h>
+#  endif
 # endif
 #endif
 

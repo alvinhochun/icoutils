@@ -36,7 +36,9 @@
    functions in the "user namespace" related to stdio locking.
    Finally, it must use glibc's internal message translation so that
    the messages are looked up in the proper text domain.  */
-# include <libintl.h>
+# if ENABLE_NLS
+#  include <libintl.h>
+# endif
 # define fprintf __fxprintf_nocancel
 # define flockfile(fp) _IO_flockfile (fp)
 # define funlockfile(fp) _IO_funlockfile (fp)
