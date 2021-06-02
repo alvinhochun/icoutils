@@ -45,6 +45,8 @@
 # define _GL_ATTRIBUTE_FORMAT_PRINTF(a, b)
 # define _GL_ARG_NONNULL(a)
 #else
+# define _GL_ATTRIBUTE_FORMAT_PRINTF(a, b)
+# define _GL_ARG_NONNULL(a)
 # include "getprogname.h"
 #endif
 

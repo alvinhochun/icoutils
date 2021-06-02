@@ -30,6 +30,8 @@
 #include "error.h"		/* common */
 #include "string-utils.h"	/* common */
 
+#define strndup(a, b) __builtin_strndup(a, b)
+
 /**
  * Return a zero-based of a character in a string.
  */

@@ -27,7 +27,7 @@
 # include <locale.h>		/* Solaris */
 #endif
 #include "gettext.h"
-#include "configmake.h"
+// #include "configmake.h"
 #define _(s) gettext(s)
 #define N_(s) gettext_noop(s)
 #include "progname.h"		/* Gnulib */
